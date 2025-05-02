@@ -9,7 +9,7 @@ try {
   const app = express();
   app.use(express.json()); 
   app.use(cors({
-    origin: 'http://localhost:3000', // Replace with your frontend's origin
+    origin: 'https://task-manager-webapp-eta.vercel.app', // Replace with your frontend's origin
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'], // Specify allowed methods
     credentials: true // If you need to send cookies
   }));
